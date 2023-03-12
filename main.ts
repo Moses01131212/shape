@@ -27,11 +27,12 @@ function getshape () {
             `)
     }
 }
-//start let
+//startLet
 let position = 0
 let shape = 0
 // setGroup
 radio.setGroup(2428)
+//functionRamondif
 function ramondIf () {
     if (position == 1) {
         radio.sendValue("M1", shape * 3)
@@ -50,7 +51,7 @@ function ramondIf () {
         radio.sendNumber(3)
     }
 }
-// randomShape
+//randomShape
 loops.everyInterval(20000, function () {
     shape = randint(3, 5)
     getshape()
