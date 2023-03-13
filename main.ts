@@ -33,7 +33,7 @@ let shape = 0
 // setGroup
 radio.setGroup(2428)
 //functionRamondif
-function ramondIf () {
+function ramondif () {
     if (position == 1) {
         radio.sendValue("M1", shape * 3)
         radio.sendValue("M2", randint(1, 25))
@@ -56,7 +56,7 @@ loops.everyInterval(20000, function () {
     shape = randint(3, 5)
     getshape()
     position = randint(1, 3)
-    ramondIf
+    ramondif
 })
 //reset
 radio.onReceivedNumber(function(receivedNumber: number) {
